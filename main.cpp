@@ -19,12 +19,12 @@ int main(int argc, char * argv[])
 
   servaddr.sin_addr.s_addr = INADDR_NONE;
   //cout << "select HWND" << endl;
-  SetConsoleCP(1251);
-  SetConsoleOutputCP(1251);
-  wprintf(L"ляляля\n");
-  printf("ляляляsdsdsвавыаы\n");
+//  SetConsoleCP(1251);
+//  SetConsoleOutputCP(1251);
+//  wprintf(L"ляляля\n");
+//  printf("ляляляsdsdsвавыаы\n");
 
-  printf("Grabber v1.0. mailTo: murinets.d@ya.ru лялял\n");
+  printf("Grabber v1.0. mailTo: murinets.d@ya.ru \n");
 
   for(int i=0; i<argc; i++){
     //printf("%s\n", argv[i]);
@@ -46,9 +46,9 @@ int main(int argc, char * argv[])
         port = atoi(argv[i]+2);
         printf("port set to %d \n", port);
     }
-    else if(strncmp(argv[i], "/?",2) == 0){
+    else {
         printf("-d dest ip. Example: -d10.0.0.1\n");
-        printf("-p dest port. Example: -p3100 Defualt: 3100\n");
+        printf("-p dest port. Example: -p3100 Default: 3100\n");
         return 0;
     }
   }
